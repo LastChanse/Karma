@@ -12,7 +12,7 @@ cd D:\Рабочий стол\Документы\Сайты\Проэкт на Dj
 
 Создать админа для сайта:
 python manage.py createsuperuser
-
+#manage.py createsuperuser
 Команды для соранения БД и использования команд БД:
 #manage.py makemigrations для сохранения истории изменений в папке migrations
 #manage.py migrate записывает из папки migration в базу данных таблицы
