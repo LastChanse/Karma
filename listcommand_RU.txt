@@ -1,0 +1,38 @@
+Основные команди Питона:
+pip freeze > requirements.txt - создаёт файл с всеми библиотеками данной среды.
+
+Вход в среду разработки:
+
+chcp 65001
+d:
+cd D:\Рабочий стол\Документы\Сайты\Проэкт на Django\KarmaMagazine\Karma
+cd KarmaVenv310\Scripts
+activate
+cd D:\Рабочий стол\Документы\Сайты\Проэкт на Django\KarmaMagazine\Karma\KarmaMagas
+
+Создать админа для сайта:
+python manage.py createsuperuser
+
+Команды для соранения БД и использования команд БД:
+#manage.py makemigrations для сохранения истории изменений в папке migrations
+#manage.py migrate записывает из папки migration в базу данных таблицы
+#manage.py shell индивидуальная командная строка где можно работать с данными
+
+Смена версии Python по умолчанию: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+* Запуск cmd от имение администратова.
+* выполнение след кода
+cd C:\bin
+
+mklink python[версия_питона].exe C:\[путь_до_питона]\python.exe
+
+Рузальтат: символическая ссылка создана для python[версия_питона].exe <<===>> C:\[путь_до_питона]\python.exe
+
+#Пример для Python3.10
+#mklink python310.exe C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe
+#Рузальтат: symbolic link created for python310.exe <<===>> C:\Users\User\AppData\Local\Programs\Python\Python310\python.exe
+
+cd [путь_где_создадим_виртуальную_среду]
+virtualenv [название_пиртуальной_среды] --python=C:\[путь_до_питона]\python[версия_питона].exe
+
+#virtualenv KarmaVenv310 --python=C:\bin\Python310.exe
